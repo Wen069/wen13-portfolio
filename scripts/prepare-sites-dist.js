@@ -1,10 +1,13 @@
 import fs from 'node:fs/promises'
 import path from 'node:path'
+import { execFile } from 'node:child_process'
+import { promisify } from 'node:util'
 import { fileURLToPath } from 'node:url'
 
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url))
 const projectDirectory = path.resolve(scriptDirectory, '..')
 const distDirectory = path.join(projectDirectory, 'dist')
+const execFileAsync = promisify(execFile)
 
 // The runtime playlist already uses the compressed MP3 files. Keep the
 // lossless masters in static/ for editing, but exclude them from deployments.
@@ -17,6 +20,25 @@ const unusedMusicMasters = [
 for(const fileName of unusedMusicMasters)
 {
     await fs.rm(path.join(distDirectory, 'sounds', 'musics', fileName), { force: true })
+}
+
+// Re-encode only the deployment copies. The source MP3 files remain untouched,
+// while the public version uses a mobile-friendly bitrate.
+for(const fileName of ['Baguira.mp3', 'Boy.mp3', 'Sudo.mp3'])
+{
+    const musicPath = path.join(distDirectory, 'sounds', 'musics', fileName)
+    const temporaryPath = path.join(distDirectory, 'sounds', 'musics', `${path.basename(fileName, '.mp3')}.publish.mp3`)
+
+    await execFileAsync('ffmpeg', [
+        '-y',
+        '-loglevel', 'error',
+        '-i', musicPath,
+        '-map_metadata', '-1',
+        '-codec:a', 'libmp3lame',
+        '-b:a', '112k',
+        temporaryPath
+    ])
+    await fs.rename(temporaryPath, musicPath)
 }
 
 let redundantAssetCount = 0
@@ -54,6 +76,33 @@ async function removeRedundantRuntimeAssets(directory)
 
 await removeRedundantRuntimeAssets(distDirectory)
 
+// Noto Sans SC ships both WOFF2 and legacy WOFF URLs. All target browsers for
+// this GPU experience support WOFF2, so remove the duplicate legacy payload.
+const assetsDirectory = path.join(distDirectory, 'assets')
+const assetEntries = await fs.readdir(assetsDirectory)
+const cssFiles = assetEntries.filter(fileName => fileName.endsWith('.css'))
+
+for(const cssFile of cssFiles)
+{
+    const cssPath = path.join(assetsDirectory, cssFile)
+    const css = await fs.readFile(cssPath, 'utf8')
+    const optimizedCss = css.replace(
+        /,\s*url\(([^)]*noto-sans-sc[^)]*\.woff)\)\s*format\((['"])woff\2\)/g,
+        ''
+    )
+    await fs.writeFile(cssPath, optimizedCss)
+}
+
+let removedLegacyFonts = 0
+for(const fileName of assetEntries)
+{
+    if(fileName.startsWith('noto-sans-sc-') && fileName.endsWith('.woff'))
+    {
+        await fs.rm(path.join(assetsDirectory, fileName))
+        removedLegacyFonts++
+    }
+}
+
 for(const diagnosticModel of [
     'areas-wen13.glb',
     'areas-wen13-ktx.glb',
@@ -86,4 +135,4 @@ const workerSource = `export default {
 
 await fs.writeFile(path.join(serverDirectory, 'index.js'), workerSource)
 
-console.log(`Sites deployment prepared; removed ${unusedMusicMasters.length} unused WAV masters and ${redundantAssetCount} redundant runtime assets.`)
+console.log(`Sites deployment prepared; removed ${unusedMusicMasters.length} unused WAV masters, ${redundantAssetCount} redundant runtime assets, and ${removedLegacyFonts} legacy font files.`)
