@@ -7,6 +7,7 @@
     "dev": "vite --mode development",
     "build": "vite build --mode production && node scripts/prepare-sites-dist.js",
     "preview": "vite preview",
+    "validate:social": "node scripts/validate-social-domestic.mjs",
     "compress": "node scripts/compress.js static/"
   },
   "author": "",

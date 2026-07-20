@@ -24,11 +24,11 @@ npm run preview -- --host 127.0.0.1 --port 4173
 - 首页与菜单文案：`sources/index.html`
 - 项目：`sources/data/projects.js`
 - 实验：`sources/data/lab.js`
-- 社交占位链接：`sources/data/social.js`
+- 国内社交链接：`sources/data/social.js`
 - 成就：`sources/data/achievements.js`
 - 头像：`static/profile/wen13-avatar.png`
 
-所有以 `#` 开头的链接都是安全占位链接，不会打开空白新标签；替换为完整的 `https://` 地址后会自动使用新标签打开。
+小红书、B站和微信公众号目前使用平台首页作为可跳转占位地址，邮箱使用 `mailto:wen13@example.com`。替换为 Wen13 的公开主页和邮箱后，三个网页链接会在安全新标签打开，邮箱会交给系统邮件应用处理。
 
 ## 定制资产
 
@@ -36,12 +36,17 @@ npm run preview -- --host 127.0.0.1 --port 4173
 - 项目看板视觉：`scripts/generate-wen13-project-images.js`
 - 3D 动态字母：`scripts/blender-export-wen13-letters.py`
 - 独立动态字母模型：`static/areas/wen13-letters.glb`
+- 国内社交雕塑生成脚本：`scripts/blender-export-social-domestic.py`
+- 国内社交雕塑增量模型：`static/areas/social-domestic.glb`
+- 模型契约校验：`npm run validate:social`
 
-主世界仍加载上游原始场景模型；WEN13 动态字母以独立增量模型接入，降低对瀑布、碰撞体和成就区域的回归风险。
+主世界仍加载上游原始场景模型；WEN13 动态字母和四个国内社交雕塑均以独立增量模型接入，降低对瀑布、碰撞体和成就区域的回归风险。旧海外品牌雕塑保留在原始 GLB 中作为回退数据，但由 `SocialArea` 在运行时移出游戏；雕像、粉丝区和隐藏频道玩法继续保留。
+
+可编辑的 `resources/social-domestic.blend` 由生成脚本产出，并遵循项目现有规则留在本地 `resources/`。公开仓库以生成脚本和已验证 GLB 为可重复交付源。
 
 ## 发布前检查
 
 - 将所有虚构履历和模拟结果替换为已核实内容，或继续保留显著的“虚构/模拟”声明。
 - 替换社交、邮箱和项目链接。
 - 确认头像照片及艺术化版本的公开使用授权。
-- 执行 `npm run build`，并在桌面端和移动端各完成一次浏览器验收。
+- 执行 `npm run validate:social` 与 `npm run build`，并在桌面端和移动端各完成一次浏览器验收。

@@ -9,4 +9,6 @@ resources
 .VSCodeCounter
 .env*
 .autosave
+.playwright-cli
+.playwright-mcp
 *.wav

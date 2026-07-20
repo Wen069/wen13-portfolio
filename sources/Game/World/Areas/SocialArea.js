@@ -23,6 +23,8 @@ export class SocialArea extends Area
             })
         }
 
+        this.removeLegacyPlatformModels()
+        this.setDomesticPlatformModels()
         this.setLinks()
         this.setFans()
         this.setOnlyFans()
@@ -31,10 +33,58 @@ export class SocialArea extends Area
         this.setAchievement()
     }
 
+    removeLegacyPlatformModels()
+    {
+        const legacyName = /^(bluesky|discord|github|linkedin|mail|twitch|x|youtube)(?:\.?\d+)?$/i
+        const legacyObjects = this.objects.items.filter((object) =>
+            object.visual && legacyName.test(object.visual.object3D.name)
+        )
+
+        for(const object of legacyObjects)
+        {
+            this.game.objects.disable(object)
+
+            for(const [ key, registeredObject ] of this.game.objects.list)
+            {
+                if(registeredObject === object)
+                    this.game.objects.list.delete(key)
+            }
+        }
+
+        this.objects.items = this.objects.items.filter((object) => !legacyObjects.includes(object))
+        this.objects.hideable = this.objects.hideable.filter((object3D) =>
+            !legacyObjects.some((object) => object.visual?.object3D === object3D)
+        )
+    }
+
+    setDomesticPlatformModels()
+    {
+        this.domesticPlatformModels = { items: [] }
+        const models = [...this.game.resources.socialDomesticModel.scene.children]
+
+        for(const model of models)
+        {
+            const object = this.game.objects.addFromModel(
+                model,
+                {},
+                {
+                    position: model.position,
+                    rotation: model.quaternion,
+                    sleeping: true,
+                    mass: model.userData.mass,
+                }
+            )
+
+            this.domesticPlatformModels.items.push(object)
+            this.objects.items.push(object)
+        }
+    }
+
     setLinks()
     {
         const radius = 6
         let i = 0
+        this.links = []
 
         for(const link of socialData)
         {
@@ -44,7 +94,7 @@ export class SocialArea extends Area
             position.y = 1
             position.z -= Math.sin(angle) * radius
 
-            this.interactivePoint = this.game.interactivePoints.create(
+            const interactivePoint = this.game.interactivePoints.create(
                 position,
                 link.name,
                 link.align === 'left' ? InteractivePoints.ALIGN_LEFT : InteractivePoints.ALIGN_RIGHT,
@@ -55,10 +105,12 @@ export class SocialArea extends Area
                     {
                         if(link.url.startsWith('#'))
                             window.location.hash = link.url.slice(1)
+                        else if(link.url.startsWith('mailto:'))
+                            window.location.href = link.url
                         else
-                            window.open(link.url, '_blank')
+                            window.open(link.url, '_blank', 'noopener,noreferrer')
                     }
-                    else(link.modal)
+                    else if(link.modal)
                         this.game.modals.open(link.modal)
                 },
                 () =>
@@ -74,6 +126,9 @@ export class SocialArea extends Area
                     this.game.inputs.interactiveButtons.removeItems(['interact'])
                 }
             )
+
+            interactivePoint.link = link
+            this.links.push(interactivePoint)
             
             i++
         }
