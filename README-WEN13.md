@@ -28,7 +28,7 @@ npm run preview -- --host 127.0.0.1 --port 4173
 - 成就：`sources/data/achievements.js`
 - 头像：`static/profile/wen13-avatar.png`
 
-小红书、B站和微信公众号目前使用平台首页作为可跳转占位地址，邮箱使用 `mailto:wen13@example.com`。替换为 Wen13 的公开主页和邮箱后，三个网页链接会在安全新标签打开，邮箱会交给系统邮件应用处理。
+小红书与 B站已使用 Wen13 的公开个人主页；微信公众号仍使用平台首页作为可跳转占位地址，邮箱仍使用 `mailto:wen13@example.com`。三个网页链接会在安全新标签打开，邮箱会交给系统邮件应用处理。分享链接中的 token、时间戳和追踪参数不进入源码，只保留稳定的公开主页地址。
 
 ## 定制资产
 

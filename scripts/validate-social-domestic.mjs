@@ -8,6 +8,10 @@ const expected = [
     { id: 'wechat', root: 'wechatPhysicalDynamic' },
     { id: 'mail', root: 'mailDomesticPhysicalDynamic' },
 ]
+const expectedPublicProfiles = new Map([
+    [ 'xiaohongshu', 'https://www.xiaohongshu.com/user/profile/62a175a0000000001902a7ee' ],
+    [ 'bilibili', 'https://space.bilibili.com/3461567886658432' ],
+])
 
 const fail = (message) =>
 {
@@ -23,6 +27,10 @@ for(let index = 0; index < expected.length; index++)
         fail(`link ${index} must be ${expected[index].id}, found ${socialData[index].id}`)
     if(!socialData[index].url || socialData[index].url.startsWith('#'))
         fail(`${socialData[index].id} must have a jump-ready placeholder URL`)
+
+    const expectedPublicProfile = expectedPublicProfiles.get(socialData[index].id)
+    if(expectedPublicProfile && socialData[index].url !== expectedPublicProfile)
+        fail(`${socialData[index].id} must use its tracking-free public profile URL`)
 }
 
 const io = new NodeIO()
