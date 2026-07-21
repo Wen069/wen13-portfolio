@@ -15,6 +15,7 @@ export class LandingArea extends Area
         this.localTime = uniform(0)
 
         this.setLetters()
+        this.setStatue()
         this.setKiosk()
         this.setControls()
         this.setBonfire()
@@ -57,6 +58,31 @@ export class LandingArea extends Area
                 this.game.audio.groups.get('hitBrick').playRandomNext(force, position)
             }
         }
+    }
+
+    setStatue()
+    {
+        const model = this.game.resources.landingKnightStatueModel.scene.children.find((child) =>
+            child.name.match(/^landingKnightStatuePhysicalFixed/i)
+        )
+
+        if(!model)
+            return
+
+        const statueObject = this.game.objects.addFromModel(
+            model,
+            {},
+            {
+                position: model.position.clone(),
+                rotation: model.quaternion.clone(),
+                sleeping: true,
+            }
+        )
+
+        this.objects.items.push(statueObject)
+
+        if(statueObject.visual)
+            this.objects.hideable.push(statueObject.visual.object3D)
     }
 
     setKiosk()

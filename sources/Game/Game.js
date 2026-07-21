@@ -155,6 +155,7 @@ export class Game
                 [ 'areasModel',                            `areas/areas${compressedModelSuffix}.glb${cb}`,                                       'gltf' ],
                 [ 'socialDomesticModel',                   `areas/social-domestic.glb${cb}`,                                                      'gltf' ],
                 [ 'wen13LettersModel',                     `areas/wen13-letters.glb${cb}`,                                                        'gltf' ],
+                [ 'landingKnightStatueModel',              `areas/landing-knight-statue.glb${cb}`,                                                'gltf' ],
                 [ 'poleLightsModel',                       `poleLights/poleLights${compressedModelSuffix}.glb${cb}`,                             'gltf' ],
                 [ 'whisperFlameTexture',                   `whispers/whisperFlame.${compressedTextureExtension}${cb}`,                           compressedTextureFormat, (resource) => { resource.minFilter = THREE.LinearFilter; resource.magFilter = THREE.LinearFilter; resource.generateMipmaps = false } ],
                 [ 'satanStarTexture',                      `areas/satanStar.${compressedTextureExtension}${cb}`,                                 compressedTextureFormat, (resource) => { resource.minFilter = THREE.LinearFilter; resource.magFilter = THREE.LinearFilter; resource.generateMipmaps = false } ],

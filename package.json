@@ -5,9 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite --mode development",
-    "build": "vite build --mode production && node scripts/prepare-sites-dist.js",
+    "build": "npm run validate && vite build --mode production && node scripts/prepare-sites-dist.js",
     "preview": "vite preview",
+    "validate": "npm run validate:social && npm run validate:landing && npm run validate:vehicle",
+    "validate:landing": "node scripts/validate-landing-customizations.mjs",
     "validate:social": "node scripts/validate-social-domestic.mjs",
+    "validate:vehicle": "node scripts/validate-vehicle-model.mjs",
     "compress": "node scripts/compress.js static/"
   },
   "author": "",
