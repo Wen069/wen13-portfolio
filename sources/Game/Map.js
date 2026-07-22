@@ -41,18 +41,18 @@ export class Map
     {
         this.locations = {}
         this.locations.items = [
-            { name: '成就收藏', respawnName: 'achievements', offset: { x: 0, y: -0.01 } },
-            { name: '混沌祭坛', respawnName: 'altar', offset: { x: 0, y: -0.05 } },
-            { name: '关于<br />这个世界', respawnName: 'behindTheScene', offset: { x: 0.01, y: 0 } },
+            { name: '路标收藏', respawnName: 'achievements', offset: { x: 0, y: -0.01 } },
+            { name: '选择与判断', respawnName: 'altar', offset: { x: 0, y: -0.05 } },
+            { name: '来源与<br />演绎说明', respawnName: 'behindTheScene', offset: { x: 0.01, y: 0 } },
             { name: '保龄球场', respawnName: 'bowling', offset: { x: -0.08, y: 0.03 } },
-            { name: 'Wen13 履历', respawnName: 'career', offset: { x: 0, y: -0.06 } },
-            { name: '计时赛道', respawnName: 'circuit', offset: { x: -0.08, y: -0.05 } },
-            { name: '曲奇小站', respawnName: 'cookie', offset: { x: -0.02, y: -0.01 } },
-            { name: 'Wen13 Lab', respawnName: 'lab', offset: { x: -0.03, y: 0 } },
-            { name: 'Wen13 基地', respawnName: 'landing', offset: { x: 0.02, y: 0 } },
-            { name: 'AI 转型项目', respawnName: 'projects', offset: { x: 0, y: -0.02 } },
-            { name: '联系 Wen13', respawnName: 'social', offset: { x: -0.01, y: -0.04 } },
-            { name: '时间机器', respawnName: 'timeMachine', offset: { x: 0, y: 0 } },
+            { name: '从纸面到赛道', respawnName: 'career', offset: { x: 0, y: -0.06 } },
+            { name: '判断发生的地方', respawnName: 'circuit', offset: { x: -0.08, y: -0.05 } },
+            { name: '行程补给站', respawnName: 'cookie', offset: { x: -0.02, y: -0.01 } },
+            { name: '速度编辑室', respawnName: 'lab', offset: { x: -0.03, y: 0 } },
+            { name: '两种速度', respawnName: 'landing', offset: { x: 0.02, y: 0 } },
+            { name: '四次进入新专业', respawnName: 'projects', offset: { x: 0, y: -0.02 } },
+            { name: '通用联系', respawnName: 'social', offset: { x: -0.01, y: -0.04 } },
+            { name: '版本，不是答案', respawnName: 'timeMachine', offset: { x: 0, y: 0 } },
         ]
 
         for(const item of this.locations.items)
