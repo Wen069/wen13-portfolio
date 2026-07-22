@@ -85,7 +85,7 @@ export class Title
             }
 
             
-            document.title = 'Wen13' + title.join('')
+            document.title = '韩寒 · 两种速度' + title.join('')
         }
     }
 }

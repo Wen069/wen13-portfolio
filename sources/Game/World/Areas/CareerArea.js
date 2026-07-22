@@ -153,9 +153,13 @@ export class CareerArea extends Area
         this.year = {}
         this.year.group = this.references.items.get('year')[0]
         this.year.originZ = this.year.group.position.z
+        // The original career lane is 17 world units long. Keep that geometry
+        // and compress the 1999–2026 editorial range onto it instead of
+        // extending the counter beyond the drivable road.
         this.year.size = 17
         this.year.offsetTarget = 0
-        this.year.start = 2008
+        this.year.start = 1999
+        this.year.end = 2026
         this.year.current = this.year.start
 
         //    Digit indexes
@@ -365,7 +369,8 @@ export class CareerArea extends Area
         const finalPositionZ = this.year.originZ - this.year.offsetTarget
         this.year.group.position.z += (finalPositionZ - this.year.group.position.z) * this.game.ticker.deltaScaled * 10
 
-        const yearCurrent = this.year.start + Math.floor(this.year.offsetTarget)
+        const yearProgress = this.year.offsetTarget / this.year.size
+        const yearCurrent = this.year.start + Math.round(yearProgress * (this.year.end - this.year.start))
 
         if(yearCurrent !== this.year.current)
         {

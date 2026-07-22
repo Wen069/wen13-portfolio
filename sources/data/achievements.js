@@ -26,7 +26,7 @@ export default
     [
         'lab',
         '实验继续',
-        '浏览 <strong>Wen13 Lab</strong> 的全部实验。',
+        '浏览<strong>速度编辑室</strong>的全部策展问题。',
         labData.length,
         true
     ],

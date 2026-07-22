@@ -1,0 +1,122 @@
+// 韩寒《两种速度》非官方策展概念版视觉覆盖层。
+// 只覆盖 DOM/UI 色彩与信息层级，不改变原有布局和交互状态机。
+
+$ink = #171716
+$paper = #E9E0CF
+$paperMuted = #C8BDAA
+$asphalt = #4B4C49
+$aluminium = #A8AAA5
+$signal = #E43C32
+$amber = #F0A33A
+$night = #141A20
+
+html
+    background radial-gradient(farthest-side at 0 0, #303234, $night)
+
+body
+    color $paper
+
+.menu-trigger
+.map-trigger
+    .button-inner
+        background linear-gradient(135deg, $signal, #7A211C)
+
+.menu
+    *::selection
+        color $ink
+        background-color $paper
+
+    .previews
+    .contents
+    .contents .content
+        background radial-gradient(ellipse at top left, #2A2C2D, $night)
+
+    .contents
+        .title
+            color $paper
+            letter-spacing 0.025em
+
+        .home-content
+            .profile-card
+                border-color alpha($paper, 0.22)
+                background linear-gradient(135deg, alpha($paper, 0.10), alpha($signal, 0.12))
+
+            .profile-kicker
+                color $signal
+
+            .profile-name
+                color $paper
+
+            .profile-role
+                color $paperMuted
+
+            .persona-note
+                border-left-color $signal
+                color $paperMuted
+                opacity 0.86
+
+    .navigation .item
+        .button-inner
+            background radial-gradient(ellipse at top right, #2F3132, $night)
+
+        &.is-active .button-inner
+            background $asphalt
+
+.modals
+    color $paper
+
+.button
+    border-color alpha($paper, 0.72)
+    color alpha($paper, 0.88)
+
+    html:not(.is-mode-touch) &:not(.is-disabled):hover
+        border-color $amber
+        color $amber
+
+.map
+    background radial-gradient(ellipse at top left, #303234, $night)
+
+    .location
+        .pin
+            background $signal
+            border-color $paper
+            box-shadow 0 0 8px alpha($signal, 0.6)
+
+        .name-container .name
+            background $ink
+            color $paper
+            border-bottom 2px solid $signal
+
+.editorial-disclosure
+    margin-top 1.2em
+    padding 0.9em 1em
+    border 1px solid alpha($paper, 0.2)
+    border-left 3px solid $signal
+    border-radius 4px
+    background alpha($ink, 0.28)
+    color $paperMuted
+    font-size 0.68rem
+    line-height 1.65
+
+.editorial-kicker
+    color $signal
+    font-size 0.6rem
+    font-weight 700
+    letter-spacing 0.14em
+    text-transform uppercase
+
+.source-label
+    display inline-flex
+    align-items center
+    margin-right 0.4em
+    padding 0.16em 0.45em
+    border 1px solid alpha($aluminium, 0.55)
+    border-radius 999px
+    color $paperMuted
+    font-size 0.62rem
+    line-height 1.2
+
+@media only screen and (max-width 520px)
+    .editorial-disclosure
+        font-size 0.7rem
+        padding 0.8em
