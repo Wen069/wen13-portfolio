@@ -9,6 +9,7 @@
 - 正式版本标签：`han-han-concept-01`
 - 公开路径：`https://wen069.github.io/wen13-portfolio/versions/han-han-concept-01/`
 - 旧版根路径继续保留：`https://wen069.github.io/wen13-portfolio/`
+- Pages 发布提交：`b479a5a205e506fa90f864a96d5e4b6befb86451`
 
 ## 内容与视觉
 

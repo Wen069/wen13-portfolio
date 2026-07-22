@@ -12,8 +12,8 @@
 
 ## 阶段状态
 
-- 当前阶段：内容、原创视觉、3D 与运行时集成完成；自动校验、生产构建和双通道浏览器 QA 通过，进入版本封板、独立路径发布与 Obsidian Exit Gate。
-- 下一可观察检查点：公开子路径返回 200，韩寒版关键资产可加载，旧根站内容未被覆盖，然后写入正式标签与项目档案。
+- 当前阶段：内容、原创视觉、3D、运行时集成、自动校验、生产构建、双通道浏览器 QA 和独立路径发布全部完成；进入正式标签与 Obsidian Exit Gate。
+- 下一可观察检查点：用户在公开链接完成体验验收；若进入 v0.2，再处理原生英文场景贴图和移动端地图地点列表。
 
 ## 决策日志
 
@@ -68,10 +68,12 @@
 - 独立 QA：Chrome/WebGPU 0 error；车辆前进与 `R` 重生、12 个中文地图节点、六个主要区域、About 免责声明和 390×844 世界/地图/菜单全部通过。证据保存在 `qa/han-han-concept-01/`。
 - 最终生产包：`validate:dist` 通过，共 799 个文件、0 个旧 Wen13 路径；PWA 名称和图标子路径通过自动检查。
 - 集成层提交：`eb96990 feat: integrate Han Han concept world`，包含运行时接入、四倍数纹理返工、分享封面、PWA 修复、旧人物发布包隔离及完整校验器。
+- QA/工作流证据提交：`5f5a64a docs: record Han Han release evidence`；远端开发分支已同步。
+- GitHub Pages 发布提交：`b479a5a Deploy Han Han concept 01`，只新增 `versions/han-han-concept-01/`，对旧 Pages 基线 `f843d74` 的非版本路径差异为零。
+- 公开验证：新地址与分享封面、雕像、HANHAN 字牌、车辆、Career KTX、PWA manifest 全部返回 200；旧 Wen13 profile 在新版本路径返回 404；旧根站仍为 `Wen13 · AI 工作流架构师`。公开根 `index.html` 与 Pages 分支根文件 SHA-256 均为 `820265caad66f1fa003ae995023707217570a1e95e2abc9990f2052493ec35e8`。
 
 ## 下一步
 
-- 完成最终只读代码审查并处理发现项；
-- 提交集成与发布证据，创建 `han-han-concept-01` 标签并推送源分支；
-- 把 `dist/` 安装到 `pages:/versions/han-han-concept-01/`，验证公开 URL 和旧根站；
-- 完成 Obsidian milestone/Exit Gate 同步。
+- 创建并推送 `han-han-concept-01` 正式标签；
+- 完成 Obsidian milestone/Exit Gate 同步；
+- 向用户交付公开链接、版本/回退证据、QA 和维护入口。
