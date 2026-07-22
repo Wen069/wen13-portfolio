@@ -1,0 +1,241 @@
+
+> han-han-two-speeds-portfolio@0.1.0 validate
+> npm run validate:social && npm run validate:landing && npm run validate:vehicle && npm run validate:hanhan && npm run validate:release
+
+
+> han-han-two-speeds-portfolio@0.1.0 validate:social
+> node scripts/validate-social-domestic.mjs
+
+{
+  "modelPath": "static/areas/social-domestic.glb",
+  "roots": 4,
+  "links": 4,
+  "report": [
+    {
+      "id": "xiaohongshu",
+      "root": "xiaohongshuPhysicalDynamic",
+      "visualNodes": 3,
+      "collider": "cuboidDomesticXiaohongshu",
+      "size": [
+        1.604,
+        1.404,
+        0.367
+      ],
+      "url": "https://www.xiaohongshu.com/explore"
+    },
+    {
+      "id": "bilibili",
+      "root": "bilibiliPhysicalDynamic",
+      "visualNodes": 6,
+      "collider": "cuboidDomesticBilibili",
+      "size": [
+        1.704,
+        1.589,
+        0.434
+      ],
+      "url": "https://www.bilibili.com/"
+    },
+    {
+      "id": "wechat",
+      "root": "wechatPhysicalDynamic",
+      "visualNodes": 9,
+      "collider": "cuboidDomesticWechat",
+      "size": [
+        1.664,
+        1.584,
+        0.495
+      ],
+      "url": "https://mp.weixin.qq.com/"
+    },
+    {
+      "id": "mail",
+      "root": "mailDomesticPhysicalDynamic",
+      "visualNodes": 4,
+      "collider": "cuboidDomesticMaildomestic",
+      "size": [
+        1.684,
+        1.404,
+        0.444
+      ],
+      "url": "mailto:contact@example.com"
+    }
+  ]
+}
+
+> han-han-two-speeds-portfolio@0.1.0 validate:landing
+> node scripts/validate-landing-customizations.mjs
+
+{
+  "valid": true,
+  "assetPath": "static/areas/landing-han-han-statue.glb",
+  "root": "landingKnightStatuePhysicalFixed",
+  "position": [
+    37,
+    0,
+    41
+  ],
+  "dimensions": [
+    3.44,
+    6.67,
+    3.4
+  ],
+  "meshCount": 3,
+  "materialCount": 3,
+  "animationCount": 0,
+  "dayCycleSeconds": 300,
+  "cameraFacingDot": 0.707,
+  "narrowViewportPlacement": {
+    "isometricHorizontal": -4,
+    "isometricDepth": 78
+  }
+}
+
+> han-han-two-speeds-portfolio@0.1.0 validate:vehicle
+> node scripts/validate-vehicle-model.mjs static/vehicle/han-han.glb
+
+Missing optional extension, "KHR_materials_emissive_strength".
+{
+  "valid": true,
+  "inputPath": "static/vehicle/han-han.glb",
+  "dimensions": [
+    2.992,
+    2.519,
+    1.912
+  ],
+  "requiredParts": {
+    "chassis": "chassis.001",
+    "bodyPainted": "bodyPainted.001",
+    "wheelContainer": "wheelContainer.001",
+    "wheelCylinder": "wheelCylinder.001"
+  },
+  "optionalFeatures": {
+    "blinkers": true,
+    "brakeLights": true,
+    "reversingLights": true,
+    "boostCells": true,
+    "antenna": false
+  },
+  "physicsCoupling": "none; PhysicsVehicle owns the Rapier chassis, wheels and handling values"
+}
+
+> han-han-two-speeds-portfolio@0.1.0 validate:hanhan
+> node scripts/validate-han-han-3d.mjs
+
+Missing optional extension, "KHR_materials_emissive_strength".
+Missing optional extension, "KHR_materials_emissive_strength".
+{
+  "valid": true,
+  "paths": {
+    "statue": "static/areas/landing-han-han-statue.glb",
+    "vehicle": "static/vehicle/han-han.glb",
+    "letters": "static/areas/han-han-letters.glb",
+    "circuit": "static/areas/han-han-circuit-markers.glb",
+    "vehicleBaseline": "static/vehicle/default.glb"
+  },
+  "statue": {
+    "dimensions": [
+      3.44,
+      6.665,
+      3.4
+    ],
+    "triangles": 9284,
+    "meshes": 3,
+    "materials": 3,
+    "textures": 0,
+    "animations": 0,
+    "bytes": 104668,
+    "kib": 102.2,
+    "root": "landingKnightStatuePhysicalFixed",
+    "position": [
+      37,
+      0,
+      41
+    ],
+    "cameraFacingDot": 0.707,
+    "narrowViewportPlacement": {
+      "isometricHorizontal": -4,
+      "isometricDepth": 78
+    }
+  },
+  "letters": {
+    "dimensions": [
+      8.077,
+      0.77,
+      3.864
+    ],
+    "triangles": 792,
+    "meshes": 6,
+    "materials": 2,
+    "textures": 0,
+    "animations": 0,
+    "bytes": 65164,
+    "kib": 63.6,
+    "topLevelDynamicLetters": [
+      "refLettersPhysicalDynamic00",
+      "refLettersPhysicalDynamic01",
+      "refLettersPhysicalDynamic02",
+      "refLettersPhysicalDynamic03",
+      "refLettersPhysicalDynamic04",
+      "refLettersPhysicalDynamic05"
+    ]
+  },
+  "vehicle": {
+    "dimensions": [
+      2.992,
+      2.519,
+      1.912
+    ],
+    "triangles": 3852,
+    "meshes": 21,
+    "materials": 6,
+    "textures": 0,
+    "animations": 0,
+    "bytes": 250836,
+    "kib": 245,
+    "baselineDimensions": [
+      2.992,
+      2.476,
+      1.912
+    ],
+    "preservedBaselineNodeCount": 24,
+    "addedVisualNodes": [
+      "hanHanSignalLineLeft",
+      "hanHanSignalLineRight",
+      "hanHanSignalLineTop"
+    ]
+  },
+  "circuit": {
+    "dimensions": [
+      102.848,
+      0.055,
+      119.19
+    ],
+    "triangles": 180,
+    "meshes": 15,
+    "materials": 2,
+    "textures": 0,
+    "animations": 0,
+    "bytes": 24736,
+    "kib": 24.2,
+    "worldSpaceSpanIntentional": true,
+    "collisionNodes": 0
+  }
+}
+
+> han-han-two-speeds-portfolio@0.1.0 validate:release
+> node scripts/validate-han-han-release.mjs
+
+{
+  "valid": true,
+  "projects": 4,
+  "projectVisuals": 12,
+  "labItems": 6,
+  "neutralSocialModels": [
+    "xiaohongshu",
+    "bilibili",
+    "wechat",
+    "mail"
+  ],
+  "verifiedFiles": 40,
+  "publicPath": "https://wen069.github.io/wen13-portfolio/versions/han-han-concept-01/"
+}
