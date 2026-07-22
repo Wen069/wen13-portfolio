@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+    
+    <defs>
+        <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+            <path d="M24 0H0V24" fill="none" stroke="#B9BCB9" stroke-width="1" opacity="0.22"/>
+        </pattern>
+        <pattern id="micro" width="8" height="8" patternUnits="userSpaceOnUse">
+            <circle cx="1" cy="1" r="0.7" fill="#F2EBDD" opacity="0.14"/>
+        </pattern>
+        <linearGradient id="paperFade" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#FAF7EF"/>
+            <stop offset="1" stop-color="#DDD4C4"/>
+        </linearGradient>
+        <linearGradient id="roadFade" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#3D4043"/>
+            <stop offset="1" stop-color="#191A1B"/>
+        </linearGradient>
+        <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+            <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000000" flood-opacity="0.22"/>
+        </filter>
+    </defs>
+    <rect width="960" height="540" fill="#292B2E"/>
+    <rect width="960" height="540" fill="url(#micro)" opacity="0.38"/>
+    <rect x="0" y="0" width="12" height="540" fill="#D94A3A"/>
+    <g font-family="Noto Sans SC, Source Han Sans SC, PingFang SC, sans-serif">
+        <text x="48" y="50" font-size="17" font-weight="700" letter-spacing="2" fill="#D94A3A">TWO SPEEDS · 04</text>
+        <text x="48" y="93" font-size="34" font-weight="700" fill="#FAF7EF">赛车电影方法</text>
+        <text x="48" y="123" font-size="16" font-weight="500" fill="#B9BCB9">两条职业线在新媒介汇合</text>
+        <text x="912" y="50" text-anchor="end" font-size="14" font-weight="700" letter-spacing="1" fill="#FAF7EF">P-MOOD</text>
+        <line x1="48" y1="144" x2="912" y2="144" stroke="#484B4E" stroke-width="1"/>
+    </g>
+    
+            <g transform="translate(0 147)">
+                <path d="M-30 316C195 332 259 166 455 176S719 327 990 160" fill="none" stroke="#101112" stroke-width="108"/>
+                <path d="M-30 316C195 332 259 166 455 176S719 327 990 160" fill="none" stroke="#D94A3A" stroke-width="5"/>
+                <rect x="16" y="276" width="24" height="8" rx="2" fill="#F2EBDD" opacity="0.28"/><rect x="69" y="292" width="24" height="8" rx="2" fill="#F2EBDD" opacity="0.4"/><rect x="122" y="276" width="24" height="8" rx="2" fill="#F2EBDD" opacity="0.52"/><rect x="175" y="292" width="24" height="8" rx="2" fill="#F2EBDD" opacity="0.64"/><rect x="228" y="276" width="24" height="8" rx="2" fill="#F2EBDD" opacity="0.28"/><rect x="281" y="292" width="24" height="8" rx="2" fill="#F2EBDD" opacity="0.4"/><rect x="334" y="276" width="24" height="8" rx="2" fill="#F2EBDD" opacity="0.52"/><rect x="387" y="292" width="24" height="8" rx="2" fill="#F2EBDD" opacity="0.64"/><rect x="440" y="276" width="24" height="8" rx="2" fill="#F2EBDD" opacity="0.28"/><rect x="493" y="292" width="24" height="8" rx="2" fill="#F2EBDD" opacity="0.4"/><rect x="546" y="276" width="24" height="8" rx="2" fill="#F2EBDD" opacity="0.52"/><rect x="599" y="292" width="24" height="8" rx="2" fill="#F2EBDD" opacity="0.64"/><rect x="652" y="276" width="24" height="8" rx="2" fill="#F2EBDD" opacity="0.28"/><rect x="705" y="292" width="24" height="8" rx="2" fill="#F2EBDD" opacity="0.4"/><rect x="758" y="276" width="24" height="8" rx="2" fill="#F2EBDD" opacity="0.52"/><rect x="811" y="292" width="24" height="8" rx="2" fill="#F2EBDD" opacity="0.64"/><rect x="864" y="276" width="24" height="8" rx="2" fill="#F2EBDD" opacity="0.28"/><rect x="917" y="292" width="24" height="8" rx="2" fill="#F2EBDD" opacity="0.4"/><rect x="970" y="276" width="24" height="8" rx="2" fill="#F2EBDD" opacity="0.52"/>
+                <g transform="translate(674 37)">
+                    <circle cx="95" cy="96" r="88" fill="none" stroke="#F2EBDD" stroke-width="2" opacity="0.22"/>
+                    <circle cx="95" cy="96" r="54" fill="none" stroke="#B9BCB9" stroke-width="2" opacity="0.38"/>
+                    <path d="M95 8V184M7 96H183" stroke="#F2EBDD" opacity="0.18"/>
+                    <path d="M95 96L157 61" stroke="#D99B3F" stroke-width="4"/>
+                </g>
+                <g font-family="Noto Sans SC, Source Han Sans SC, PingFang SC, sans-serif">
+                    <text x="60" y="63" font-size="13" font-weight="700" letter-spacing="2" fill="#B9BCB9">TRACK → TIMELINE</text>
+                    <text x="60" y="101" font-size="21" font-weight="700" fill="#FAF7EF">道路逐渐显出剪辑刻度。</text>
+                    <text x="60" y="129" font-size="15" fill="#B9BCB9">这是两种职业语言汇合的艺术演绎。</text>
+                </g>
+            </g>
+    <g transform="translate(48 489)" font-family="Noto Sans SC, Source Han Sans SC, PingFang SC, sans-serif">
+        <rect width="360" height="30" rx="15" fill="#F2EBDD" opacity="0.12"/>
+        <circle cx="17" cy="15" r="4" fill="#D99B3F"/>
+        <text x="31" y="20" font-size="12" font-weight="700" fill="#FAF7EF">艺术演绎 · 非真实现场</text>
+        <text x="864" y="20" text-anchor="end" font-size="11" font-weight="500" fill="#B9BCB9">非官方原创策展概念</text>
+    </g>
+</svg>

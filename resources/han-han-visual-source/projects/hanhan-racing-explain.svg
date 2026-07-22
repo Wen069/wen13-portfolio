@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+    
+    <defs>
+        <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+            <path d="M24 0H0V24" fill="none" stroke="#B9BCB9" stroke-width="1" opacity="0.22"/>
+        </pattern>
+        <pattern id="micro" width="8" height="8" patternUnits="userSpaceOnUse">
+            <circle cx="1" cy="1" r="0.7" fill="#F2EBDD" opacity="0.14"/>
+        </pattern>
+        <linearGradient id="paperFade" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#FAF7EF"/>
+            <stop offset="1" stop-color="#DDD4C4"/>
+        </linearGradient>
+        <linearGradient id="roadFade" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#3D4043"/>
+            <stop offset="1" stop-color="#191A1B"/>
+        </linearGradient>
+        <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+            <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000000" flood-opacity="0.22"/>
+        </filter>
+    </defs>
+    <rect width="960" height="540" fill="#F2EBDD"/>
+    <rect width="960" height="540" fill="url(#grid)" opacity="0.62"/>
+    <rect x="0" y="0" width="12" height="540" fill="#D94A3A"/>
+    <g font-family="Noto Sans SC, Source Han Sans SC, PingFang SC, sans-serif">
+        <text x="48" y="50" font-size="17" font-weight="700" letter-spacing="2" fill="#D94A3A">TWO SPEEDS · 02</text>
+        <text x="48" y="93" font-size="34" font-weight="700" fill="#151617">职业赛车</text>
+        <text x="48" y="123" font-size="16" font-weight="500" fill="#7F796F">用规则证明另一种专业</text>
+        <text x="912" y="50" text-anchor="end" font-size="14" font-weight="700" letter-spacing="1" fill="#151617">P-EXPLAIN</text>
+        <line x1="48" y1="144" x2="912" y2="144" stroke="#B9BCB9" stroke-width="1"/>
+    </g>
+    
+            <g transform="translate(48 171)" font-family="Noto Sans SC, Source Han Sans SC, PingFang SC, sans-serif">
+                <g>
+                    <rect width="418" height="268" rx="8" fill="#FAF7EF" stroke="#B9BCB9"/>
+                    <text x="24" y="38" font-size="13" font-weight="700" fill="#D94A3A">RALLY / 拉力</text>
+                    <text x="24" y="75" font-size="25" font-weight="700" fill="#151617">未知路面中的协作判断</text>
+                    <path d="M34 133C100 81 138 179 212 121S330 100 382 158" fill="none" stroke="#151617" stroke-width="5"/>
+                    <g font-size="12" font-weight="700" fill="#7F796F">
+                        <text x="24" y="219">路书</text><text x="130" y="219">领航</text><text x="236" y="219">分段计时</text><text x="342" y="219">变化路面</text>
+                    </g>
+                    <path d="M24 235H394" stroke="#DDD4C4"/>
+                    <text x="24" y="256" font-size="12" fill="#7F796F">判断来自信息、信任与即时修正</text>
+                </g>
+                <g transform="translate(446 0)">
+                    <rect width="418" height="268" rx="8" fill="#151617"/>
+                    <text x="24" y="38" font-size="13" font-weight="700" fill="#D99B3F">CIRCUIT / 场地</text>
+                    <text x="24" y="75" font-size="25" font-weight="700" fill="#FAF7EF">重复赛道中的极限校准</text>
+                    <path d="M82 131C82 93 124 89 206 89S335 102 335 139S290 175 208 175S82 169 82 131Z" fill="none" stroke="#F2EBDD" stroke-width="5"/>
+                    <path d="M82 131C146 130 224 119 335 139" fill="none" stroke="#D94A3A" stroke-width="4"/>
+                    <g font-size="12" font-weight="700" fill="#B9BCB9">
+                        <text x="24" y="219">走线</text><text x="130" y="219">刹车点</text><text x="236" y="219">圈速</text><text x="342" y="219">对抗</text>
+                    </g>
+                    <path d="M24 235H394" stroke="#484B4E"/>
+                    <text x="24" y="256" font-size="12" fill="#B9BCB9">判断来自复盘、精度与连续一致性</text>
+                </g>
+            </g>
+    <g transform="translate(48 489)" font-family="Noto Sans SC, Source Han Sans SC, PingFang SC, sans-serif">
+        <rect width="360" height="30" rx="15" fill="#151617" opacity="0.07"/>
+        <circle cx="17" cy="15" r="4" fill="#D94A3A"/>
+        <text x="31" y="20" font-size="12" font-weight="700" fill="#151617">原创策展解释 · 非本人原话</text>
+        <text x="864" y="20" text-anchor="end" font-size="11" font-weight="500" fill="#7F796F">非官方原创策展概念</text>
+    </g>
+</svg>

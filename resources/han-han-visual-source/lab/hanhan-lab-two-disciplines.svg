@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+    
+    <defs>
+        <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+            <path d="M24 0H0V24" fill="none" stroke="#B9BCB9" stroke-width="1" opacity="0.22"/>
+        </pattern>
+        <pattern id="micro" width="8" height="8" patternUnits="userSpaceOnUse">
+            <circle cx="1" cy="1" r="0.7" fill="#F2EBDD" opacity="0.14"/>
+        </pattern>
+        <linearGradient id="paperFade" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#FAF7EF"/>
+            <stop offset="1" stop-color="#DDD4C4"/>
+        </linearGradient>
+        <linearGradient id="roadFade" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#3D4043"/>
+            <stop offset="1" stop-color="#191A1B"/>
+        </linearGradient>
+        <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+            <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000000" flood-opacity="0.22"/>
+        </filter>
+    </defs>
+    <rect width="960" height="540" fill="#151617"/>
+    <rect width="960" height="540" fill="url(#micro)" opacity="0.45"/>
+    <rect x="0" y="0" width="12" height="540" fill="#D99B3F"/>
+    <g font-family="Noto Sans SC, Source Han Sans SC, PingFang SC, sans-serif">
+        <text x="50" y="52" font-size="14" font-weight="700" fill="#D99B3F" letter-spacing="2">SPEED EDITING LAB · 03</text>
+        <text x="50" y="112" font-size="34" font-weight="700" fill="#FAF7EF">两种赛制，两种判断</text>
+        <text x="50" y="147" font-size="16" fill="#B9BCB9">拉力协作 / 场地校准</text>
+        <rect x="50" y="186" width="355" height="182" rx="7" fill="#F2EBDD"/>
+        <text x="72" y="223" font-size="12" font-weight="700" fill="#D94A3A">QUESTION / 策展问题</text>
+        
+    <text x="72" y="270" font-family="Noto Sans SC, Source Han Sans SC, PingFang SC, sans-serif" font-size="20" font-weight="700" fill="#151617" text-anchor="start">
+        <tspan x="72" dy="0">两种比赛为什么需要不同的</tspan><tspan x="72" dy="34">信息与判断方式？</tspan>
+    </text>
+        <rect x="50" y="396" width="112" height="28" rx="14" fill="#D99B3F"/>
+        <text x="106" y="415" text-anchor="middle" font-size="12" font-weight="700" fill="#151617">公开材料</text>
+        <text x="50" y="469" font-size="12" fill="#B9BCB9">非本人私人想法 · 不冒充真实实验</text>
+        <text x="910" y="508" text-anchor="end" font-size="11" fill="#B9BCB9">非官方原创策展概念</text>
+    </g>
+    <g transform="translate(520 176)"><g><path d="M22 171C76 65 149 174 190 82" fill="none" stroke="#F2EBDD" stroke-width="26"/><ellipse cx="277" cy="105" rx="72" ry="46" fill="none" stroke="#F2EBDD" stroke-width="26"/><path d="M22 171C76 65 149 174 190 82M205 105H349" fill="none" stroke="#D94A3A" stroke-width="4"/></g></g>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+    
+    <defs>
+        <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+            <path d="M24 0H0V24" fill="none" stroke="#B9BCB9" stroke-width="1" opacity="0.22"/>
+        </pattern>
+        <pattern id="micro" width="8" height="8" patternUnits="userSpaceOnUse">
+            <circle cx="1" cy="1" r="0.7" fill="#F2EBDD" opacity="0.14"/>
+        </pattern>
+        <linearGradient id="paperFade" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#FAF7EF"/>
+            <stop offset="1" stop-color="#DDD4C4"/>
+        </linearGradient>
+        <linearGradient id="roadFade" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#3D4043"/>
+            <stop offset="1" stop-color="#191A1B"/>
+        </linearGradient>
+        <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+            <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000000" flood-opacity="0.22"/>
+        </filter>
+    </defs>
+    <rect width="960" height="540" fill="#292B2E"/>
+    <rect width="960" height="540" fill="url(#micro)" opacity="0.38"/>
+    <rect x="0" y="0" width="12" height="540" fill="#D94A3A"/>
+    <g font-family="Noto Sans SC, Source Han Sans SC, PingFang SC, sans-serif">
+        <text x="48" y="50" font-size="17" font-weight="700" letter-spacing="2" fill="#D94A3A">TWO SPEEDS · 02</text>
+        <text x="48" y="93" font-size="34" font-weight="700" fill="#FAF7EF">职业赛车</text>
+        <text x="48" y="123" font-size="16" font-weight="500" fill="#B9BCB9">用规则证明另一种专业</text>
+        <text x="912" y="50" text-anchor="end" font-size="14" font-weight="700" letter-spacing="1" fill="#FAF7EF">P-MOOD</text>
+        <line x1="48" y1="144" x2="912" y2="144" stroke="#484B4E" stroke-width="1"/>
+    </g>
+    
+            <g transform="translate(0 146)">
+                <path d="M-52 358C169 175 245 245 398 158S672 38 1018 222" fill="none" stroke="#111213" stroke-width="166"/>
+                <path d="M-52 358C169 175 245 245 398 158S672 38 1018 222" fill="none" stroke="#484B4E" stroke-width="2" stroke-dasharray="18 20"/>
+                <path d="M-52 343C167 166 248 236 400 150S674 29 1018 213" fill="none" stroke="#D94A3A" stroke-width="7" stroke-linecap="round"/>
+                <circle cx="104" cy="304" r="4" fill="#D99B3F" opacity="0.35"/><circle cx="216" cy="221.01302853435158" r="4" fill="#D99B3F" opacity="0.41"/><circle cx="328" cy="186.00687701286398" r="4" fill="#D99B3F" opacity="0.47"/><circle cx="440" cy="219.2211544178431" r="4" fill="#D99B3F" opacity="0.53"/><circle cx="552" cy="301.4522648643207" r="4" fill="#D99B3F" opacity="0.59"/><circle cx="664" cy="385.1564067837089" r="4" fill="#D99B3F" opacity="0.6499999999999999"/><circle cx="776" cy="421.93811169361953" r="4" fill="#D99B3F" opacity="0.71"/><circle cx="888" cy="390.53119371748744" r="4" fill="#D99B3F" opacity="0.77"/>
+                <g font-family="Noto Sans SC, Source Han Sans SC, PingFang SC, sans-serif">
+                    <text x="62" y="70" font-size="13" font-weight="700" letter-spacing="2" fill="#B9BCB9">AFTER RAIN / IDEAL LINE</text>
+                    <text x="62" y="108" font-size="21" font-weight="700" fill="#FAF7EF">红线不是一条真实赛道。</text>
+                    <text x="62" y="136" font-size="15" fill="#B9BCB9">它代表一次可以被检验、修正、再尝试的判断。</text>
+                </g>
+            </g>
+    <g transform="translate(48 489)" font-family="Noto Sans SC, Source Han Sans SC, PingFang SC, sans-serif">
+        <rect width="360" height="30" rx="15" fill="#F2EBDD" opacity="0.12"/>
+        <circle cx="17" cy="15" r="4" fill="#D99B3F"/>
+        <text x="31" y="20" font-size="12" font-weight="700" fill="#FAF7EF">艺术演绎 · 非真实现场</text>
+        <text x="864" y="20" text-anchor="end" font-size="11" font-weight="500" fill="#B9BCB9">非官方原创策展概念</text>
+    </g>
+</svg>

@@ -1,0 +1,584 @@
+{
+  "generatedAt": "2026-07-22",
+  "generator": "scripts/generate-han-han-content-assets.mjs",
+  "fontStack": "Noto Sans SC, Source Han Sans SC, PingFang SC, sans-serif",
+  "renderedFontAvailable": "Source Han Sans SC (Noto Sans CJK-compatible), with Noto Sans SC and PingFang SC fallbacks",
+  "palette": {
+    "ink": "#151617",
+    "asphalt": "#292B2E",
+    "graphite": "#484B4E",
+    "aluminum": "#B9BCB9",
+    "paper": "#F2EBDD",
+    "paperDeep": "#DDD4C4",
+    "signal": "#D94A3A",
+    "amber": "#D99B3F",
+    "muted": "#7F796F",
+    "white": "#FAF7EF"
+  },
+  "rightsBoundary": "非官方原创策展概念；没有真实肖像、电影静帧、书封、片名字标、赛事/车队/赞助商标。",
+  "assets": [
+    {
+      "category": "projects",
+      "name": "hanhan-writing-evidence",
+      "width": 960,
+      "height": 540,
+      "source": "resources/han-han-visual-source/projects/hanhan-writing-evidence.svg",
+      "png": "static/projects/images/hanhan-writing-evidence.png",
+      "ktx": "static/projects/images/hanhan-writing-evidence.ktx"
+    },
+    {
+      "category": "projects",
+      "name": "hanhan-writing-explain",
+      "width": 960,
+      "height": 540,
+      "source": "resources/han-han-visual-source/projects/hanhan-writing-explain.svg",
+      "png": "static/projects/images/hanhan-writing-explain.png",
+      "ktx": "static/projects/images/hanhan-writing-explain.ktx"
+    },
+    {
+      "category": "projects",
+      "name": "hanhan-writing-mood",
+      "width": 960,
+      "height": 540,
+      "source": "resources/han-han-visual-source/projects/hanhan-writing-mood.svg",
+      "png": "static/projects/images/hanhan-writing-mood.png",
+      "ktx": "static/projects/images/hanhan-writing-mood.ktx"
+    },
+    {
+      "category": "projects",
+      "name": "hanhan-racing-evidence",
+      "width": 960,
+      "height": 540,
+      "source": "resources/han-han-visual-source/projects/hanhan-racing-evidence.svg",
+      "png": "static/projects/images/hanhan-racing-evidence.png",
+      "ktx": "static/projects/images/hanhan-racing-evidence.ktx"
+    },
+    {
+      "category": "projects",
+      "name": "hanhan-racing-explain",
+      "width": 960,
+      "height": 540,
+      "source": "resources/han-han-visual-source/projects/hanhan-racing-explain.svg",
+      "png": "static/projects/images/hanhan-racing-explain.png",
+      "ktx": "static/projects/images/hanhan-racing-explain.ktx"
+    },
+    {
+      "category": "projects",
+      "name": "hanhan-racing-mood",
+      "width": 960,
+      "height": 540,
+      "source": "resources/han-han-visual-source/projects/hanhan-racing-mood.svg",
+      "png": "static/projects/images/hanhan-racing-mood.png",
+      "ktx": "static/projects/images/hanhan-racing-mood.ktx"
+    },
+    {
+      "category": "projects",
+      "name": "hanhan-directing-evidence",
+      "width": 960,
+      "height": 540,
+      "source": "resources/han-han-visual-source/projects/hanhan-directing-evidence.svg",
+      "png": "static/projects/images/hanhan-directing-evidence.png",
+      "ktx": "static/projects/images/hanhan-directing-evidence.ktx"
+    },
+    {
+      "category": "projects",
+      "name": "hanhan-directing-explain",
+      "width": 960,
+      "height": 540,
+      "source": "resources/han-han-visual-source/projects/hanhan-directing-explain.svg",
+      "png": "static/projects/images/hanhan-directing-explain.png",
+      "ktx": "static/projects/images/hanhan-directing-explain.ktx"
+    },
+    {
+      "category": "projects",
+      "name": "hanhan-directing-mood",
+      "width": 960,
+      "height": 540,
+      "source": "resources/han-han-visual-source/projects/hanhan-directing-mood.svg",
+      "png": "static/projects/images/hanhan-directing-mood.png",
+      "ktx": "static/projects/images/hanhan-directing-mood.ktx"
+    },
+    {
+      "category": "projects",
+      "name": "hanhan-convergence-evidence",
+      "width": 960,
+      "height": 540,
+      "source": "resources/han-han-visual-source/projects/hanhan-convergence-evidence.svg",
+      "png": "static/projects/images/hanhan-convergence-evidence.png",
+      "ktx": "static/projects/images/hanhan-convergence-evidence.ktx"
+    },
+    {
+      "category": "projects",
+      "name": "hanhan-convergence-explain",
+      "width": 960,
+      "height": 540,
+      "source": "resources/han-han-visual-source/projects/hanhan-convergence-explain.svg",
+      "png": "static/projects/images/hanhan-convergence-explain.png",
+      "ktx": "static/projects/images/hanhan-convergence-explain.ktx"
+    },
+    {
+      "category": "projects",
+      "name": "hanhan-convergence-mood",
+      "width": 960,
+      "height": 540,
+      "source": "resources/han-han-visual-source/projects/hanhan-convergence-mood.svg",
+      "png": "static/projects/images/hanhan-convergence-mood.png",
+      "ktx": "static/projects/images/hanhan-convergence-mood.ktx"
+    },
+    {
+      "category": "lab",
+      "name": "hanhan-lab-text-to-lens",
+      "width": 960,
+      "height": 540,
+      "source": "resources/han-han-visual-source/lab/hanhan-lab-text-to-lens.svg",
+      "png": "static/lab/images/hanhan-lab-text-to-lens.png",
+      "ktx": "static/lab/images/hanhan-lab-text-to-lens.ktx"
+    },
+    {
+      "category": "lab",
+      "name": "hanhan-lab-text-to-lens-mini",
+      "width": 240,
+      "height": 136,
+      "source": "resources/han-han-visual-source/lab/hanhan-lab-text-to-lens-mini.svg",
+      "png": "static/lab/images/hanhan-lab-text-to-lens-mini.png",
+      "ktx": "static/lab/images/hanhan-lab-text-to-lens-mini.ktx"
+    },
+    {
+      "category": "lab",
+      "name": "hanhan-lab-visible-speed",
+      "width": 960,
+      "height": 540,
+      "source": "resources/han-han-visual-source/lab/hanhan-lab-visible-speed.svg",
+      "png": "static/lab/images/hanhan-lab-visible-speed.png",
+      "ktx": "static/lab/images/hanhan-lab-visible-speed.ktx"
+    },
+    {
+      "category": "lab",
+      "name": "hanhan-lab-visible-speed-mini",
+      "width": 240,
+      "height": 136,
+      "source": "resources/han-han-visual-source/lab/hanhan-lab-visible-speed-mini.svg",
+      "png": "static/lab/images/hanhan-lab-visible-speed-mini.png",
+      "ktx": "static/lab/images/hanhan-lab-visible-speed-mini.ktx"
+    },
+    {
+      "category": "lab",
+      "name": "hanhan-lab-two-disciplines",
+      "width": 960,
+      "height": 540,
+      "source": "resources/han-han-visual-source/lab/hanhan-lab-two-disciplines.svg",
+      "png": "static/lab/images/hanhan-lab-two-disciplines.png",
+      "ktx": "static/lab/images/hanhan-lab-two-disciplines.ktx"
+    },
+    {
+      "category": "lab",
+      "name": "hanhan-lab-two-disciplines-mini",
+      "width": 240,
+      "height": 136,
+      "source": "resources/han-han-visual-source/lab/hanhan-lab-two-disciplines-mini.svg",
+      "png": "static/lab/images/hanhan-lab-two-disciplines-mini.png",
+      "ktx": "static/lab/images/hanhan-lab-two-disciplines-mini.ktx"
+    },
+    {
+      "category": "lab",
+      "name": "hanhan-lab-route-narrative",
+      "width": 960,
+      "height": 540,
+      "source": "resources/han-han-visual-source/lab/hanhan-lab-route-narrative.svg",
+      "png": "static/lab/images/hanhan-lab-route-narrative.png",
+      "ktx": "static/lab/images/hanhan-lab-route-narrative.ktx"
+    },
+    {
+      "category": "lab",
+      "name": "hanhan-lab-route-narrative-mini",
+      "width": 240,
+      "height": 136,
+      "source": "resources/han-han-visual-source/lab/hanhan-lab-route-narrative-mini.svg",
+      "png": "static/lab/images/hanhan-lab-route-narrative-mini.png",
+      "ktx": "static/lab/images/hanhan-lab-route-narrative-mini.ktx"
+    },
+    {
+      "category": "lab",
+      "name": "hanhan-lab-failure-comedy",
+      "width": 960,
+      "height": 540,
+      "source": "resources/han-han-visual-source/lab/hanhan-lab-failure-comedy.svg",
+      "png": "static/lab/images/hanhan-lab-failure-comedy.png",
+      "ktx": "static/lab/images/hanhan-lab-failure-comedy.ktx"
+    },
+    {
+      "category": "lab",
+      "name": "hanhan-lab-failure-comedy-mini",
+      "width": 240,
+      "height": 136,
+      "source": "resources/han-han-visual-source/lab/hanhan-lab-failure-comedy-mini.svg",
+      "png": "static/lab/images/hanhan-lab-failure-comedy-mini.png",
+      "ktx": "static/lab/images/hanhan-lab-failure-comedy-mini.ktx"
+    },
+    {
+      "category": "lab",
+      "name": "hanhan-lab-next-start",
+      "width": 960,
+      "height": 540,
+      "source": "resources/han-han-visual-source/lab/hanhan-lab-next-start.svg",
+      "png": "static/lab/images/hanhan-lab-next-start.png",
+      "ktx": "static/lab/images/hanhan-lab-next-start.ktx"
+    },
+    {
+      "category": "lab",
+      "name": "hanhan-lab-next-start-mini",
+      "width": 240,
+      "height": 136,
+      "source": "resources/han-han-visual-source/lab/hanhan-lab-next-start-mini.svg",
+      "png": "static/lab/images/hanhan-lab-next-start-mini.png",
+      "ktx": "static/lab/images/hanhan-lab-next-start-mini.ktx"
+    },
+    {
+      "category": "career",
+      "name": "hanhan-career-writing",
+      "width": 318,
+      "height": 96,
+      "source": "resources/han-han-visual-source/career/hanhan-career-writing.svg",
+      "png": "static/career/hanhan-career-writing.png",
+      "ktx": "static/career/hanhan-career-writing.ktx"
+    },
+    {
+      "category": "career",
+      "name": "hanhan-career-racing-start",
+      "width": 330,
+      "height": 96,
+      "source": "resources/han-han-visual-source/career/hanhan-career-racing-start.svg",
+      "png": "static/career/hanhan-career-racing-start.png",
+      "ktx": "static/career/hanhan-career-racing-start.ktx"
+    },
+    {
+      "category": "career",
+      "name": "hanhan-career-double-title",
+      "width": 346,
+      "height": 96,
+      "source": "resources/han-han-visual-source/career/hanhan-career-double-title.svg",
+      "png": "static/career/hanhan-career-double-title.png",
+      "ktx": "static/career/hanhan-career-double-title.ktx"
+    },
+    {
+      "category": "career",
+      "name": "hanhan-career-director",
+      "width": 320,
+      "height": 96,
+      "source": "resources/han-han-visual-source/career/hanhan-career-director.svg",
+      "png": "static/career/hanhan-career-director.png",
+      "ktx": "static/career/hanhan-career-director.ktx"
+    },
+    {
+      "category": "career",
+      "name": "hanhan-career-merge",
+      "width": 330,
+      "height": 96,
+      "source": "resources/han-han-visual-source/career/hanhan-career-merge.svg",
+      "png": "static/career/hanhan-career-merge.png",
+      "ktx": "static/career/hanhan-career-merge.ktx"
+    },
+    {
+      "category": "career",
+      "name": "hanhan-career-open-loop",
+      "width": 312,
+      "height": 96,
+      "source": "resources/han-han-visual-source/career/hanhan-career-open-loop.svg",
+      "png": "static/career/hanhan-career-open-loop.png",
+      "ktx": "static/career/hanhan-career-open-loop.ktx"
+    },
+    {
+      "category": "time-machine",
+      "name": "hanhan-time-1999-writing",
+      "width": 140,
+      "height": 124,
+      "source": "resources/han-han-visual-source/time-machine/hanhan-time-1999-writing.svg",
+      "png": "static/timeMachine/hanhan-time-1999-writing.png",
+      "ktx": "static/timeMachine/hanhan-time-1999-writing.ktx"
+    },
+    {
+      "category": "time-machine",
+      "name": "hanhan-time-2003-racing",
+      "width": 140,
+      "height": 124,
+      "source": "resources/han-han-visual-source/time-machine/hanhan-time-2003-racing.svg",
+      "png": "static/timeMachine/hanhan-time-2003-racing.png",
+      "ktx": "static/timeMachine/hanhan-time-2003-racing.ktx"
+    },
+    {
+      "category": "time-machine",
+      "name": "hanhan-time-2014-directing",
+      "width": 140,
+      "height": 124,
+      "source": "resources/han-han-visual-source/time-machine/hanhan-time-2014-directing.svg",
+      "png": "static/timeMachine/hanhan-time-2014-directing.png",
+      "ktx": "static/timeMachine/hanhan-time-2014-directing.ktx"
+    },
+    {
+      "category": "time-machine",
+      "name": "hanhan-time-2026-open",
+      "width": 140,
+      "height": 124,
+      "source": "resources/han-han-visual-source/time-machine/hanhan-time-2026-open.svg",
+      "png": "static/timeMachine/hanhan-time-2026-open.png",
+      "ktx": "static/timeMachine/hanhan-time-2026-open.ktx"
+    },
+    {
+      "category": "profile",
+      "name": "han-han-concept-avatar",
+      "width": 1024,
+      "height": 1024,
+      "source": "resources/han-han-visual-source/profile/han-han-concept-avatar.svg",
+      "png": "static/profile/han-han-concept-avatar.png",
+      "webp": "static/profile/han-han-concept-avatar.webp"
+    }
+  ],
+  "qa": [
+    {
+      "file": "static/projects/images/hanhan-writing-evidence.png",
+      "width": 960,
+      "height": 540,
+      "channels": 4,
+      "dynamicRange": 221
+    },
+    {
+      "file": "static/projects/images/hanhan-writing-explain.png",
+      "width": 960,
+      "height": 540,
+      "channels": 4,
+      "dynamicRange": 229
+    },
+    {
+      "file": "static/projects/images/hanhan-writing-mood.png",
+      "width": 960,
+      "height": 540,
+      "channels": 4,
+      "dynamicRange": 216
+    },
+    {
+      "file": "static/projects/images/hanhan-racing-evidence.png",
+      "width": 960,
+      "height": 540,
+      "channels": 4,
+      "dynamicRange": 229
+    },
+    {
+      "file": "static/projects/images/hanhan-racing-explain.png",
+      "width": 960,
+      "height": 540,
+      "channels": 4,
+      "dynamicRange": 229
+    },
+    {
+      "file": "static/projects/images/hanhan-racing-mood.png",
+      "width": 960,
+      "height": 540,
+      "channels": 4,
+      "dynamicRange": 233
+    },
+    {
+      "file": "static/projects/images/hanhan-directing-evidence.png",
+      "width": 960,
+      "height": 540,
+      "channels": 4,
+      "dynamicRange": 229
+    },
+    {
+      "file": "static/projects/images/hanhan-directing-explain.png",
+      "width": 960,
+      "height": 540,
+      "channels": 4,
+      "dynamicRange": 229
+    },
+    {
+      "file": "static/projects/images/hanhan-directing-mood.png",
+      "width": 960,
+      "height": 540,
+      "channels": 4,
+      "dynamicRange": 237
+    },
+    {
+      "file": "static/projects/images/hanhan-convergence-evidence.png",
+      "width": 960,
+      "height": 540,
+      "channels": 4,
+      "dynamicRange": 229
+    },
+    {
+      "file": "static/projects/images/hanhan-convergence-explain.png",
+      "width": 960,
+      "height": 540,
+      "channels": 4,
+      "dynamicRange": 229
+    },
+    {
+      "file": "static/projects/images/hanhan-convergence-mood.png",
+      "width": 960,
+      "height": 540,
+      "channels": 4,
+      "dynamicRange": 234
+    },
+    {
+      "file": "static/lab/images/hanhan-lab-text-to-lens.png",
+      "width": 960,
+      "height": 540,
+      "channels": 4,
+      "dynamicRange": 229
+    },
+    {
+      "file": "static/lab/images/hanhan-lab-text-to-lens-mini.png",
+      "width": 240,
+      "height": 136,
+      "channels": 4,
+      "dynamicRange": 229
+    },
+    {
+      "file": "static/lab/images/hanhan-lab-visible-speed.png",
+      "width": 960,
+      "height": 540,
+      "channels": 4,
+      "dynamicRange": 229
+    },
+    {
+      "file": "static/lab/images/hanhan-lab-visible-speed-mini.png",
+      "width": 240,
+      "height": 136,
+      "channels": 4,
+      "dynamicRange": 229
+    },
+    {
+      "file": "static/lab/images/hanhan-lab-two-disciplines.png",
+      "width": 960,
+      "height": 540,
+      "channels": 4,
+      "dynamicRange": 229
+    },
+    {
+      "file": "static/lab/images/hanhan-lab-two-disciplines-mini.png",
+      "width": 240,
+      "height": 136,
+      "channels": 4,
+      "dynamicRange": 229
+    },
+    {
+      "file": "static/lab/images/hanhan-lab-route-narrative.png",
+      "width": 960,
+      "height": 540,
+      "channels": 4,
+      "dynamicRange": 229
+    },
+    {
+      "file": "static/lab/images/hanhan-lab-route-narrative-mini.png",
+      "width": 240,
+      "height": 136,
+      "channels": 4,
+      "dynamicRange": 229
+    },
+    {
+      "file": "static/lab/images/hanhan-lab-failure-comedy.png",
+      "width": 960,
+      "height": 540,
+      "channels": 4,
+      "dynamicRange": 229
+    },
+    {
+      "file": "static/lab/images/hanhan-lab-failure-comedy-mini.png",
+      "width": 240,
+      "height": 136,
+      "channels": 4,
+      "dynamicRange": 229
+    },
+    {
+      "file": "static/lab/images/hanhan-lab-next-start.png",
+      "width": 960,
+      "height": 540,
+      "channels": 4,
+      "dynamicRange": 229
+    },
+    {
+      "file": "static/lab/images/hanhan-lab-next-start-mini.png",
+      "width": 240,
+      "height": 136,
+      "channels": 4,
+      "dynamicRange": 229
+    },
+    {
+      "file": "static/career/hanhan-career-writing.png",
+      "width": 318,
+      "height": 96,
+      "channels": 4,
+      "dynamicRange": 255
+    },
+    {
+      "file": "static/career/hanhan-career-racing-start.png",
+      "width": 330,
+      "height": 96,
+      "channels": 4,
+      "dynamicRange": 255
+    },
+    {
+      "file": "static/career/hanhan-career-double-title.png",
+      "width": 346,
+      "height": 96,
+      "channels": 4,
+      "dynamicRange": 255
+    },
+    {
+      "file": "static/career/hanhan-career-director.png",
+      "width": 320,
+      "height": 96,
+      "channels": 4,
+      "dynamicRange": 255
+    },
+    {
+      "file": "static/career/hanhan-career-merge.png",
+      "width": 330,
+      "height": 96,
+      "channels": 4,
+      "dynamicRange": 255
+    },
+    {
+      "file": "static/career/hanhan-career-open-loop.png",
+      "width": 312,
+      "height": 96,
+      "channels": 4,
+      "dynamicRange": 255
+    },
+    {
+      "file": "static/timeMachine/hanhan-time-1999-writing.png",
+      "width": 140,
+      "height": 124,
+      "channels": 4,
+      "dynamicRange": 221
+    },
+    {
+      "file": "static/timeMachine/hanhan-time-2003-racing.png",
+      "width": 140,
+      "height": 124,
+      "channels": 4,
+      "dynamicRange": 201
+    },
+    {
+      "file": "static/timeMachine/hanhan-time-2014-directing.png",
+      "width": 140,
+      "height": 124,
+      "channels": 4,
+      "dynamicRange": 201
+    },
+    {
+      "file": "static/timeMachine/hanhan-time-2026-open.png",
+      "width": 140,
+      "height": 124,
+      "channels": 4,
+      "dynamicRange": 201
+    },
+    {
+      "file": "static/profile/han-han-concept-avatar.png",
+      "width": 1024,
+      "height": 1024,
+      "channels": 4,
+      "dynamicRange": 231
+    }
+  ],
+  "contactSheet": "resources/han-han-visual-source/hanhan-visual-contact-sheet.png"
+}

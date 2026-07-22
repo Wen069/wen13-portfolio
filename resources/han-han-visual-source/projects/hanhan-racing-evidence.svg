@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+    
+    <defs>
+        <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+            <path d="M24 0H0V24" fill="none" stroke="#B9BCB9" stroke-width="1" opacity="0.22"/>
+        </pattern>
+        <pattern id="micro" width="8" height="8" patternUnits="userSpaceOnUse">
+            <circle cx="1" cy="1" r="0.7" fill="#F2EBDD" opacity="0.14"/>
+        </pattern>
+        <linearGradient id="paperFade" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#FAF7EF"/>
+            <stop offset="1" stop-color="#DDD4C4"/>
+        </linearGradient>
+        <linearGradient id="roadFade" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#3D4043"/>
+            <stop offset="1" stop-color="#191A1B"/>
+        </linearGradient>
+        <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+            <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000000" flood-opacity="0.22"/>
+        </filter>
+    </defs>
+    <rect width="960" height="540" fill="#F2EBDD"/>
+    <rect width="960" height="540" fill="url(#grid)" opacity="0.62"/>
+    <rect x="0" y="0" width="12" height="540" fill="#D94A3A"/>
+    <g font-family="Noto Sans SC, Source Han Sans SC, PingFang SC, sans-serif">
+        <text x="48" y="50" font-size="17" font-weight="700" letter-spacing="2" fill="#D94A3A">TWO SPEEDS · 02</text>
+        <text x="48" y="93" font-size="34" font-weight="700" fill="#151617">职业赛车</text>
+        <text x="48" y="123" font-size="16" font-weight="500" fill="#7F796F">用规则证明另一种专业</text>
+        <text x="912" y="50" text-anchor="end" font-size="14" font-weight="700" letter-spacing="1" fill="#151617">P-EVIDENCE</text>
+        <line x1="48" y1="144" x2="912" y2="144" stroke="#B9BCB9" stroke-width="1"/>
+    </g>
+    
+            <g transform="translate(48 170)" font-family="Noto Sans SC, Source Han Sans SC, PingFang SC, sans-serif">
+                <g transform="translate(0 0)">
+                    <text x="0" y="30" font-size="44" font-weight="700" fill="#151617">2003</text>
+                    <text x="0" y="62" font-size="17" font-weight="700" fill="#D94A3A">职业赛车生涯起步</text>
+                    <text x="0" y="90" font-size="13" fill="#7F796F">公开身份变化 · FACT-003</text>
+                </g>
+                <path d="M262 74C342 4 425 4 505 74S668 144 816 74" fill="none" stroke="#B9BCB9" stroke-width="18" stroke-linecap="round"/>
+                <path d="M262 74C342 4 425 4 505 74S668 144 816 74" fill="none" stroke="#151617" stroke-width="2" stroke-dasharray="10 10"/>
+                <g transform="translate(0 152)">
+                    <rect width="864" height="160" rx="8" fill="#151617"/>
+                    <text x="28" y="42" font-size="42" font-weight="700" fill="#FAF7EF">2012</text>
+                    <text x="28" y="73" font-size="15" font-weight="700" fill="#D99B3F">同一年 · 两种赛制 · 两项全国年度冠军</text>
+                    <g transform="translate(336 24)">
+                        <rect width="224" height="112" rx="6" fill="#F2EBDD"/>
+                        <text x="18" y="31" font-size="12" font-weight="700" fill="#D94A3A">RALLY / 拉力</text>
+                        <path d="M19 78C64 42 112 109 200 54" fill="none" stroke="#151617" stroke-width="4"/>
+                        <circle cx="19" cy="78" r="5" fill="#D94A3A"/><circle cx="200" cy="54" r="5" fill="#D99B3F"/>
+                    </g>
+                    <g transform="translate(582 24)">
+                        <rect width="254" height="112" rx="6" fill="#F2EBDD"/>
+                        <text x="18" y="31" font-size="12" font-weight="700" fill="#D94A3A">CIRCUIT / 场地</text>
+                        <ellipse cx="127" cy="72" rx="92" ry="23" fill="none" stroke="#151617" stroke-width="4"/>
+                        <path d="M127 49V95" stroke="#D94A3A" stroke-width="4"/>
+                    </g>
+                </g>
+            </g>
+    <g transform="translate(48 489)" font-family="Noto Sans SC, Source Han Sans SC, PingFang SC, sans-serif">
+        <rect width="360" height="30" rx="15" fill="#151617" opacity="0.07"/>
+        <circle cx="17" cy="15" r="4" fill="#D94A3A"/>
+        <text x="31" y="20" font-size="12" font-weight="700" fill="#151617">公开事实索引 · 非原始档案</text>
+        <text x="864" y="20" text-anchor="end" font-size="11" font-weight="500" fill="#7F796F">非官方原创策展概念</text>
+    </g>
+</svg>

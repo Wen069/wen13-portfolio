@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+    
+    <defs>
+        <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+            <path d="M24 0H0V24" fill="none" stroke="#B9BCB9" stroke-width="1" opacity="0.22"/>
+        </pattern>
+        <pattern id="micro" width="8" height="8" patternUnits="userSpaceOnUse">
+            <circle cx="1" cy="1" r="0.7" fill="#F2EBDD" opacity="0.14"/>
+        </pattern>
+        <linearGradient id="paperFade" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#FAF7EF"/>
+            <stop offset="1" stop-color="#DDD4C4"/>
+        </linearGradient>
+        <linearGradient id="roadFade" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#3D4043"/>
+            <stop offset="1" stop-color="#191A1B"/>
+        </linearGradient>
+        <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+            <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000000" flood-opacity="0.22"/>
+        </filter>
+    </defs>
+    <rect width="960" height="540" fill="#F2EBDD"/>
+    <rect width="960" height="540" fill="url(#grid)" opacity="0.62"/>
+    <rect x="0" y="0" width="12" height="540" fill="#D94A3A"/>
+    <g font-family="Noto Sans SC, Source Han Sans SC, PingFang SC, sans-serif">
+        <text x="48" y="50" font-size="17" font-weight="700" letter-spacing="2" fill="#D94A3A">TWO SPEEDS · 03</text>
+        <text x="48" y="93" font-size="34" font-weight="700" fill="#151617">第一次执导</text>
+        <text x="48" y="123" font-size="16" font-weight="500" fill="#7F796F">把文字重新组织成镜头</text>
+        <text x="912" y="50" text-anchor="end" font-size="14" font-weight="700" letter-spacing="1" fill="#151617">P-EXPLAIN</text>
+        <line x1="48" y1="144" x2="912" y2="144" stroke="#B9BCB9" stroke-width="1"/>
+    </g>
+    
+            <g transform="translate(48 174)" font-family="Noto Sans SC, Source Han Sans SC, PingFang SC, sans-serif">
+                <text x="0" y="22" font-size="13" font-weight="700" fill="#7F796F">一条原创占位句如何进入生产流程</text>
+                <g transform="translate(0 53)">
+                    <rect width="194" height="204" rx="6" fill="#FAF7EF" stroke="#B9BCB9"/>
+                    <text x="18" y="32" font-size="12" font-weight="700" fill="#D94A3A">01</text>
+                    <text x="18" y="71" font-size="23" font-weight="700" fill="#151617">句子</text>
+                    <line x1="18" y1="91" x2="176" y2="91" stroke="#DDD4C4"/>
+                    
+    <text x="18" y="121" font-family="Noto Sans SC, Source Han Sans SC, PingFang SC, sans-serif" font-size="13" font-weight="500" fill="#7F796F" text-anchor="start">
+        <tspan x="18" dy="0">“雨停后，路面仍在发亮。”</tspan>
+    </text>
+                    <path d="M196 102H213M206 96L213 102L206 108" stroke="#D94A3A" stroke-width="2" fill="none"/>
+                </g><g transform="translate(218 53)">
+                    <rect width="194" height="204" rx="6" fill="#FAF7EF" stroke="#B9BCB9"/>
+                    <text x="18" y="32" font-size="12" font-weight="700" fill="#D94A3A">02</text>
+                    <text x="18" y="71" font-size="23" font-weight="700" fill="#151617">镜头表</text>
+                    <line x1="18" y1="91" x2="176" y2="91" stroke="#DDD4C4"/>
+                    
+    <text x="18" y="121" font-family="Noto Sans SC, Source Han Sans SC, PingFang SC, sans-serif" font-size="13" font-weight="500" fill="#7F796F" text-anchor="start">
+        <tspan x="18" dy="0">远景</tspan><tspan x="18" dy="24">低机位</tspan><tspan x="18" dy="24">静止</tspan>
+    </text>
+                    <path d="M196 102H213M206 96L213 102L206 108" stroke="#D94A3A" stroke-width="2" fill="none"/>
+                </g><g transform="translate(436 53)">
+                    <rect width="194" height="204" rx="6" fill="#FAF7EF" stroke="#B9BCB9"/>
+                    <text x="18" y="32" font-size="12" font-weight="700" fill="#D94A3A">03</text>
+                    <text x="18" y="71" font-size="23" font-weight="700" fill="#151617">场面调度</text>
+                    <line x1="18" y1="91" x2="176" y2="91" stroke="#DDD4C4"/>
+                    
+    <text x="18" y="121" font-family="Noto Sans SC, Source Han Sans SC, PingFang SC, sans-serif" font-size="13" font-weight="500" fill="#7F796F" text-anchor="start">
+        <tspan x="18" dy="0">车外</tspan><tspan x="18" dy="24">留白</tspan><tspan x="18" dy="24">反光</tspan>
+    </text>
+                    <path d="M196 102H213M206 96L213 102L206 108" stroke="#D94A3A" stroke-width="2" fill="none"/>
+                </g><g transform="translate(654 53)">
+                    <rect width="194" height="204" rx="6" fill="#151617" stroke="#151617"/>
+                    <text x="18" y="32" font-size="12" font-weight="700" fill="#D99B3F">04</text>
+                    <text x="18" y="71" font-size="23" font-weight="700" fill="#FAF7EF">剪辑节奏</text>
+                    <line x1="18" y1="91" x2="176" y2="91" stroke="#484B4E"/>
+                    
+    <text x="18" y="121" font-family="Noto Sans SC, Source Han Sans SC, PingFang SC, sans-serif" font-size="13" font-weight="500" fill="#B9BCB9" text-anchor="start">
+        <tspan x="18" dy="0">3 秒停顿 → 动作开始</tspan>
+    </text>
+                    
+                </g>
+                <text x="0" y="300" font-size="12" fill="#7F796F">示例文字由策展团队原创，仅用于解释媒介转换，不是本人原句或真实分镜。</text>
+            </g>
+    <g transform="translate(48 489)" font-family="Noto Sans SC, Source Han Sans SC, PingFang SC, sans-serif">
+        <rect width="360" height="30" rx="15" fill="#151617" opacity="0.07"/>
+        <circle cx="17" cy="15" r="4" fill="#D94A3A"/>
+        <text x="31" y="20" font-size="12" font-weight="700" fill="#151617">原创策展解释 · 非本人原话</text>
+        <text x="864" y="20" text-anchor="end" font-size="11" font-weight="500" fill="#7F796F">非官方原创策展概念</text>
+    </g>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+    
+    <defs>
+        <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+            <path d="M24 0H0V24" fill="none" stroke="#B9BCB9" stroke-width="1" opacity="0.22"/>
+        </pattern>
+        <pattern id="micro" width="8" height="8" patternUnits="userSpaceOnUse">
+            <circle cx="1" cy="1" r="0.7" fill="#F2EBDD" opacity="0.14"/>
+        </pattern>
+        <linearGradient id="paperFade" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#FAF7EF"/>
+            <stop offset="1" stop-color="#DDD4C4"/>
+        </linearGradient>
+        <linearGradient id="roadFade" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#3D4043"/>
+            <stop offset="1" stop-color="#191A1B"/>
+        </linearGradient>
+        <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+            <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000000" flood-opacity="0.22"/>
+        </filter>
+    </defs>
+    <rect width="1024" height="1024" fill="#F2EBDD"/>
+    <rect width="1024" height="1024" fill="url(#grid)" opacity="0.72"/>
+    <circle cx="512" cy="474" r="330" fill="#151617"/>
+    <path d="M294 466C303 299 399 207 526 207C664 207 746 311 751 451C756 607 658 721 506 727C361 733 286 618 294 466Z" fill="#DDD4C4"/>
+    <path d="M301 466C306 317 393 229 512 213V727C371 726 293 616 301 466Z" fill="#484B4E"/>
+    <path d="M498 248C611 235 696 318 706 426L520 426C498 376 487 314 498 248Z" fill="#151617"/>
+    <path d="M320 453C375 431 433 426 520 426" fill="none" stroke="#D94A3A" stroke-width="34" stroke-linecap="round"/>
+    <path d="M706 426C671 469 624 492 560 496" fill="none" stroke="#D99B3F" stroke-width="13" stroke-linecap="round"/>
+    <path d="M506 727L656 845H351L506 727Z" fill="#B9BCB9"/>
+    <g transform="translate(676 592) rotate(-10)">
+        <rect width="178" height="242" rx="8" fill="#FAF7EF" filter="url(#softShadow)"/>
+        <path d="M24 48H146M24 77H130M24 106H151M24 135H112" stroke="#484B4E" stroke-width="10" stroke-linecap="round"/>
+        <path d="M25 184C70 148 104 217 150 164" fill="none" stroke="#D94A3A" stroke-width="11"/>
+    </g>
+    <g font-family="Noto Sans SC, Source Han Sans SC, PingFang SC, sans-serif">
+        <text x="64" y="88" font-size="23" font-weight="700" fill="#D94A3A" letter-spacing="3">TWO SPEEDS / CONCEPT MARK</text>
+        <text x="64" y="958" font-size="20" font-weight="700" fill="#151617">抽象侧脸 · 头盔 · 纸页</text>
+        <text x="960" y="958" text-anchor="end" font-size="17" font-weight="700" fill="#7F796F">非本人肖像</text>
+    </g>
+</svg>

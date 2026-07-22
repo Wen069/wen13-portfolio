@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+    
+    <defs>
+        <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+            <path d="M24 0H0V24" fill="none" stroke="#B9BCB9" stroke-width="1" opacity="0.22"/>
+        </pattern>
+        <pattern id="micro" width="8" height="8" patternUnits="userSpaceOnUse">
+            <circle cx="1" cy="1" r="0.7" fill="#F2EBDD" opacity="0.14"/>
+        </pattern>
+        <linearGradient id="paperFade" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#FAF7EF"/>
+            <stop offset="1" stop-color="#DDD4C4"/>
+        </linearGradient>
+        <linearGradient id="roadFade" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#3D4043"/>
+            <stop offset="1" stop-color="#191A1B"/>
+        </linearGradient>
+        <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+            <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000000" flood-opacity="0.22"/>
+        </filter>
+    </defs>
+    <rect width="960" height="540" fill="#151617"/>
+    <rect width="960" height="540" fill="url(#micro)" opacity="0.45"/>
+    <rect x="0" y="0" width="12" height="540" fill="#D99B3F"/>
+    <g font-family="Noto Sans SC, Source Han Sans SC, PingFang SC, sans-serif">
+        <text x="50" y="52" font-size="14" font-weight="700" fill="#D99B3F" letter-spacing="2">SPEED EDITING LAB · 05</text>
+        <text x="50" y="112" font-size="34" font-weight="700" fill="#FAF7EF">失败怎样进入喜剧</text>
+        <text x="50" y="147" font-size="16" fill="#B9BCB9">等待 · 偏差 · 反转 · 重来</text>
+        <rect x="50" y="186" width="355" height="182" rx="7" fill="#F2EBDD"/>
+        <text x="72" y="223" font-size="12" font-weight="700" fill="#D94A3A">QUESTION / 策展问题</text>
+        
+    <text x="72" y="270" font-family="Noto Sans SC, Source Han Sans SC, PingFang SC, sans-serif" font-size="20" font-weight="700" fill="#151617" text-anchor="start">
+        <tspan x="72" dy="0">失败、等待与重来怎样形成</tspan><tspan x="72" dy="34">节奏，而非励志口号？</tspan>
+    </text>
+        <rect x="50" y="396" width="112" height="28" rx="14" fill="#D94A3A"/>
+        <text x="106" y="415" text-anchor="middle" font-size="12" font-weight="700" fill="#151617">艺术演绎</text>
+        <text x="50" y="469" font-size="12" fill="#B9BCB9">非本人私人想法 · 不冒充真实实验</text>
+        <text x="910" y="508" text-anchor="end" font-size="11" fill="#B9BCB9">非官方原创策展概念</text>
+    </g>
+    <g transform="translate(520 176)"><g><path d="M8 96H352" stroke="#484B4E"/><line x1="34" y1="32" x2="34" y2="166" stroke="#F2EBDD" stroke-width="3"/><circle cx="34" cy="32" r="7" fill="#D99B3F"/><line x1="90" y1="55" x2="90" y2="145" stroke="#F2EBDD" stroke-width="3"/><circle cx="90" cy="55" r="7" fill="#D99B3F"/><line x1="158" y1="32" x2="158" y2="166" stroke="#F2EBDD" stroke-width="3"/><circle cx="158" cy="32" r="7" fill="#D99B3F"/><line x1="239" y1="55" x2="239" y2="145" stroke="#F2EBDD" stroke-width="3"/><circle cx="239" cy="55" r="7" fill="#D94A3A"/><line x1="321" y1="32" x2="321" y2="166" stroke="#F2EBDD" stroke-width="3"/><circle cx="321" cy="32" r="7" fill="#D99B3F"/><path d="M8 155C72 38 147 170 211 62S314 126 352 33" fill="none" stroke="#D94A3A" stroke-width="4"/></g></g>
+</svg>
