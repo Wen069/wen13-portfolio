@@ -446,11 +446,11 @@ const labMiniSvg = (item) => `
 </svg>`
 
 const careerItems = [
-    { id: 'writing', width: 318, lines: ['1999 · 写作被看见', '公共表达的起点'] },
-    { id: 'racing-start', width: 330, lines: ['2003 · 进入职业赛车', '接受另一套规则'] },
-    { id: 'double-title', width: 346, lines: ['2012 · 两种赛制', '同一年，两项年度冠军'] },
+    { id: 'writing', width: 320, lines: ['1999 · 写作被看见', '公共表达的起点'] },
+    { id: 'racing-start', width: 332, lines: ['2003 · 进入职业赛车', '接受另一套规则'] },
+    { id: 'double-title', width: 348, lines: ['2012 · 两种赛制', '同一年，两项年度冠军'] },
     { id: 'director', width: 320, lines: ['2014 · 文字成为镜头', '导演身份进入职业线'] },
-    { id: 'merge', width: 330, lines: ['2019 · 两条线汇合', '赛车经验进入叙事'] },
+    { id: 'merge', width: 332, lines: ['2019 · 两条线汇合', '赛车经验进入叙事'] },
     { id: 'open-loop', width: 312, lines: ['2026 · 下一圈', '创作仍未结束'] },
 ]
 
@@ -527,6 +527,9 @@ const encodeKtx = async (pngPath, ktxPath, preset = 'etc1s') => {
 }
 
 const writeAsset = async ({ category, name, width, height, svg, output, ktx = false, preset = 'etc1s', webp = false }) => {
+    if(ktx && (width % 4 !== 0 || height % 4 !== 0))
+        throw new Error(`${name} KTX dimensions must be multiples of four; got ${width}×${height}`)
+
     const sourcePath = path.join(sourceRoot, category, `${name}.svg`)
     const outputPath = path.join(root, output)
     await ensureDirectory(sourcePath)

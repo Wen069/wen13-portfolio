@@ -53,11 +53,26 @@ export class CircuitArea extends Area
         this.setLeaderboard()
         this.setResetTime()
         this.setPodium()
+        this.setHanHanMarkers()
         this.setData()
         this.setAchievement()
 
         this.game.materials.getFromName('circuitBrand').map.minFilter = THREE.LinearFilter
         this.game.materials.getFromName('circuitBrand').map.magFilter = THREE.LinearFilter
+    }
+
+    setHanHanMarkers()
+    {
+        this.hanHanMarkers = this.game.resources.hanHanCircuitMarkersModel.scene
+        this.hanHanMarkers.traverse((child) =>
+        {
+            if(child.isMesh)
+            {
+                child.castShadow = false
+                child.receiveShadow = true
+            }
+        })
+        this.game.scene.add(this.hanHanMarkers)
     }
 
     setSounds()

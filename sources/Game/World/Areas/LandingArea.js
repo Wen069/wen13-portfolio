@@ -34,7 +34,7 @@ export class LandingArea extends Area
             this.game.objects.disable(originalObject)
         }
 
-        const models = [...this.game.resources.wen13LettersModel.scene.children]
+        const models = [...this.game.resources.hanHanLettersModel.scene.children]
         for(const model of models)
         {
             const letterObject = this.game.objects.addFromModel(

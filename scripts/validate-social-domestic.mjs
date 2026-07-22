@@ -8,9 +8,11 @@ const expected = [
     { id: 'wechat', root: 'wechatPhysicalDynamic' },
     { id: 'mail', root: 'mailDomesticPhysicalDynamic' },
 ]
-const expectedPublicProfiles = new Map([
-    [ 'xiaohongshu', 'https://www.xiaohongshu.com/user/profile/62a175a0000000001902a7ee' ],
-    [ 'bilibili', 'https://space.bilibili.com/3461567886658432' ],
+const expectedPlaceholderTargets = new Map([
+    [ 'xiaohongshu', 'https://www.xiaohongshu.com/explore' ],
+    [ 'bilibili', 'https://www.bilibili.com/' ],
+    [ 'wechat', 'https://mp.weixin.qq.com/' ],
+    [ 'mail', 'mailto:contact@example.com' ],
 ])
 
 const fail = (message) =>
@@ -28,9 +30,9 @@ for(let index = 0; index < expected.length; index++)
     if(!socialData[index].url || socialData[index].url.startsWith('#'))
         fail(`${socialData[index].id} must have a jump-ready placeholder URL`)
 
-    const expectedPublicProfile = expectedPublicProfiles.get(socialData[index].id)
-    if(expectedPublicProfile && socialData[index].url !== expectedPublicProfile)
-        fail(`${socialData[index].id} must use its tracking-free public profile URL`)
+    const expectedPlaceholderTarget = expectedPlaceholderTargets.get(socialData[index].id)
+    if(socialData[index].url !== expectedPlaceholderTarget)
+        fail(`${socialData[index].id} must remain a neutral template target in this editorial build`)
 }
 
 const io = new NodeIO()

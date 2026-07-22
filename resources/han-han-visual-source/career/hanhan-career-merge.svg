@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="330" height="96" viewBox="0 0 330 96">
-    <rect width="330" height="96" fill="#000000" fill-opacity="0"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="332" height="96" viewBox="0 0 332 96">
+    <rect width="332" height="96" fill="#000000" fill-opacity="0"/>
     <g font-family="Noto Sans SC, Source Han Sans SC, PingFang SC, sans-serif" text-anchor="middle">
-        <text x="165" y="35" font-size="21" font-weight="700" fill="#FFFFFF">2019 · 两条线汇合</text>
-        <text x="165" y="67" font-size="17" font-weight="700" fill="#D7D7D7">赛车经验进入叙事</text>
-        <rect x="131" y="81" width="68" height="4" rx="2" fill="#FFFFFF"/>
+        <text x="166" y="35" font-size="21" font-weight="700" fill="#FFFFFF">2019 · 两条线汇合</text>
+        <text x="166" y="67" font-size="17" font-weight="700" fill="#D7D7D7">赛车经验进入叙事</text>
+        <rect x="132" y="81" width="68" height="4" rx="2" fill="#FFFFFF"/>
     </g>
 </svg>

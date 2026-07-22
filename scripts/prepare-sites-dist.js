@@ -112,6 +112,35 @@ for(const diagnosticModel of [
     await fs.rm(path.join(distDirectory, 'areas', diagnosticModel), { force: true })
 }
 
+// Keep the source repository as the rollback truth, but do not expose the
+// previous Wen13 persona assets inside this independent Han Han release.
+const retiredWen13Files = [
+    'areas/wen13-letters.glb',
+    'profile/wen13-avatar.png',
+    'career/careerFreelancer.ktx',
+    'career/careerHetic.ktx',
+    'career/careerImmersiveGarden.ktx',
+    'career/careerIRLTeacher.ktx',
+    'career/careerOnlineTeacher.ktx',
+    'career/careerUzik.ktx',
+    'career/original/careerFreelancer.ktx',
+    'career/original/careerHetic.ktx',
+    'career/original/careerImmersiveGarden.ktx',
+    'career/original/careerIRLTeacher.ktx',
+    'career/original/careerOnlineTeacher.ktx',
+    'career/original/careerUzik.ktx',
+]
+
+for(const relativePath of retiredWen13Files)
+    await fs.rm(path.join(distDirectory, relativePath), { force: true })
+
+const projectImagesDirectory = path.join(distDirectory, 'projects', 'images')
+const retiredProjectImages = (await fs.readdir(projectImagesDirectory))
+    .filter(fileName => fileName.startsWith('wen13-'))
+
+for(const fileName of retiredProjectImages)
+    await fs.rm(path.join(projectImagesDirectory, fileName), { force: true })
+
 // Sites runs a Cloudflare-compatible Worker. The portfolio itself is a static
 // Vite app, so the Worker delegates files to the platform asset binding and
 // falls back to index.html for client-side routes.
@@ -135,4 +164,4 @@ const workerSource = `export default {
 
 await fs.writeFile(path.join(serverDirectory, 'index.js'), workerSource)
 
-console.log(`Sites deployment prepared; removed ${unusedMusicMasters.length} unused WAV masters, ${redundantAssetCount} redundant runtime assets, and ${removedLegacyFonts} legacy font files.`)
+console.log(`Sites deployment prepared; removed ${unusedMusicMasters.length} unused WAV masters, ${redundantAssetCount} redundant runtime assets, ${removedLegacyFonts} legacy font files, and ${retiredWen13Files.length + retiredProjectImages.length} retired Wen13 files.`)

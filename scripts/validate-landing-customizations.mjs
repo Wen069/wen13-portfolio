@@ -1,10 +1,16 @@
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 import { getBounds, NodeIO } from '@gltf-transform/core'
+import { KHRDracoMeshCompression } from '@gltf-transform/extensions'
+import draco3d from 'draco3dgltf'
 
 
-const assetPath = 'static/areas/landing-knight-statue.glb'
+const assetPath = 'static/areas/landing-han-han-statue.glb'
 const io = new NodeIO()
+    .registerExtensions([KHRDracoMeshCompression])
+    .registerDependencies({
+        'draco3d.decoder': await draco3d.createDecoderModule(),
+    })
 const document = await io.read(assetPath)
 const root = document.getRoot()
 const scene = root.listScenes()[0]
@@ -47,7 +53,7 @@ assert.match(dayCyclesSource, /super\('🕜 Day Cycles',\s*5\s*\*\s*60,/, 'day/n
 
 const gameSource = await readFile('sources/Game/Game.js', 'utf8')
 assert.match(gameSource, /landingKnightStatueModel/, 'Game resource registry must include the landing statue')
-assert.match(gameSource, /areas\/landing-knight-statue\.glb/, 'Game resource registry must point to the shipped statue asset')
+assert.match(gameSource, /areas\/landing-han-han-statue\.glb/, 'Game resource registry must point to the Han Han statue asset')
 
 const landingSource = await readFile('sources/Game/World/Areas/LandingArea.js', 'utf8')
 assert.match(landingSource, /this\.setStatue\(\)/, 'LandingArea must initialize the statue')

@@ -236,7 +236,7 @@
     {
       "category": "career",
       "name": "hanhan-career-writing",
-      "width": 318,
+      "width": 320,
       "height": 96,
       "source": "resources/han-han-visual-source/career/hanhan-career-writing.svg",
       "png": "static/career/hanhan-career-writing.png",
@@ -245,7 +245,7 @@
     {
       "category": "career",
       "name": "hanhan-career-racing-start",
-      "width": 330,
+      "width": 332,
       "height": 96,
       "source": "resources/han-han-visual-source/career/hanhan-career-racing-start.svg",
       "png": "static/career/hanhan-career-racing-start.png",
@@ -254,7 +254,7 @@
     {
       "category": "career",
       "name": "hanhan-career-double-title",
-      "width": 346,
+      "width": 348,
       "height": 96,
       "source": "resources/han-han-visual-source/career/hanhan-career-double-title.svg",
       "png": "static/career/hanhan-career-double-title.png",
@@ -272,7 +272,7 @@
     {
       "category": "career",
       "name": "hanhan-career-merge",
-      "width": 330,
+      "width": 332,
       "height": 96,
       "source": "resources/han-han-visual-source/career/hanhan-career-merge.svg",
       "png": "static/career/hanhan-career-merge.png",
@@ -504,21 +504,21 @@
     },
     {
       "file": "static/career/hanhan-career-writing.png",
-      "width": 318,
+      "width": 320,
       "height": 96,
       "channels": 4,
       "dynamicRange": 255
     },
     {
       "file": "static/career/hanhan-career-racing-start.png",
-      "width": 330,
+      "width": 332,
       "height": 96,
       "channels": 4,
       "dynamicRange": 255
     },
     {
       "file": "static/career/hanhan-career-double-title.png",
-      "width": 346,
+      "width": 348,
       "height": 96,
       "channels": 4,
       "dynamicRange": 255
@@ -532,7 +532,7 @@
     },
     {
       "file": "static/career/hanhan-career-merge.png",
-      "width": 330,
+      "width": 332,
       "height": 96,
       "channels": 4,
       "dynamicRange": 255

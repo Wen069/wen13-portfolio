@@ -47,8 +47,10 @@ export class TimeMachineArea extends Area
         let collideIndex = 0
 
         const screenTextures = [
-            this.game.resources.timeMachineScreenFolioTexture,
-            this.game.resources.timeMachineScreenMGSTexture,
+            this.game.resources.timeMachine1999Texture,
+            this.game.resources.timeMachine2003Texture,
+            this.game.resources.timeMachine2014Texture,
+            this.game.resources.timeMachine2026Texture,
         ]
 
         const alertSound = this.game.audio.register({
